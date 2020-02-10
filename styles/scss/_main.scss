@@ -1,7 +1,105 @@
-.flexParent {
-    display: flex;
+// $color1: rgba(255, 255, 255, 1);
+// $color2: rgba(246, 220, 159, 1);
+// $color3: rgba(249, 201, 0, 1);
+// $color4: rgba(255, 209, 0, 1);
+// $color5: rgba(30, 30, 30, 1);
+
+
+body {
+    padding: 2% 3%;
+    background-color: $color5;
 }
 
-ul li img {
-    width: 18%;
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1250px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $color4;
+}
+
+.boyfriend,
+.comeFromAway,
+.hamilton,
+.lesMiz,
+.summer {
+    width: 100%;
+    max-width: calc(1249px / 5);
+    height: auto;
+}
+
+main {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 15%;
+    background-color: $color4;
+    text-align: center;
+}
+
+button {
+    color: $color5;
+    background-color: $color1;
+    margin: 5%;
+    padding: 2%;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 5px 10px 5px 0px $color5;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover,
+button:focus {
+    color: $color1;
+    background-color: $color5;
+    box-shadow: none;
+}
+
+
+
+header,
+footer {
+    background-color: $color5;
+}
+
+footer {
+    color: $color4;
+    margin: 0;
+    padding: 25px 0 0;
+    text-align: center;
+}
+
+h1,
+h2, 
+p {
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: $primaryFont;
+}
+
+p,
+button {
+    font-family: $secondaryFont;
+}
+
+.yesButton,
+.noButton,
+.answers {
+    display: none;
 }

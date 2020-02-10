@@ -240,6 +240,14 @@ button {
   font-weight: bold;
 }
 
+button:hover,
+button:focus {
+  color: white;
+  background-color: #1e1e1e;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 header,
 footer {
   background-color: #1e1e1e;
@@ -253,11 +261,13 @@ footer {
 }
 
 h1,
+h2,
 p {
   margin: 0;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Playfair Display", serif;
 }
 
@@ -265,4 +275,9 @@ p,
 button {
   font-family: "Open Sans", sans-serif;
 }
-/*# sourceMappingURL=style.css.map */
+
+.yesButton,
+.noButton,
+.answers {
+  display: none;
+}
