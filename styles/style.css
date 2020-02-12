@@ -179,8 +179,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-/* Coolors Exported Palette - coolors.co/ffffff-f6dc9f-f9c900-ffd100-1e1e1e */
-/* RGB */
+/*Where the color palette came from: Coolors Exported Palette - coolors.co/ffffff-f6dc9f-f9c900-ffd100-1e1e1e */
+/* just RGB colors from color palette*/
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+}
+
 body {
   padding: 2% 3%;
   background-color: #1e1e1e;
@@ -217,6 +224,25 @@ a {
   width: 100%;
   max-width: calc(1249px / 5);
   height: auto;
+  opacity: 0.75;
+}
+
+.boyfriend:hover,
+.boyfriend:focus,
+.boyfriend:active,
+.comeFromAway:hover,
+.comeFromAway:focus,
+.comeFromAway:active,
+.hamilton:hover,
+.hamilton:focus,
+.hamilton:active,
+.lesMiz:hover,
+.lesMiz:focus,
+.lesMiz:active,
+.summer:hover,
+.summer:focus,
+.summer:active {
+  opacity: 1;
 }
 
 main {
@@ -271,6 +297,30 @@ h2 {
   font-family: "Playfair Display", serif;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 5% 5%;
+}
+
+i {
+  color: white;
+}
+
+i:hover,
+i:focus,
+i:active {
+  color: #1e1e1e;
+}
+
+.icons ul {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 15%;
+  margin-bottom: -35px;
+}
+
 p,
 button {
   font-family: "Open Sans", sans-serif;
@@ -278,6 +328,10 @@ button {
 
 .yesButton,
 .noButton,
-.answers {
+.result {
   display: none;
+}
+
+.description {
+  margin-top: 4%;
 }

@@ -1,9 +1,14 @@
-// $color1: rgba(255, 255, 255, 1);
-// $color2: rgba(246, 220, 159, 1);
-// $color3: rgba(249, 201, 0, 1);
-// $color4: rgba(255, 209, 0, 1);
-// $color5: rgba(30, 30, 30, 1);
+// ***.skip-link is to hide the "skip to main content" link**
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: $white;
+    color: $black;
+}
 
+// ***General Styling***
 
 body {
     padding: 2% 3%;
@@ -39,12 +44,32 @@ a {
     width: 100%;
     max-width: calc(1249px / 5);
     height: auto;
+    opacity: 0.75;
+}
+
+.boyfriend:hover,
+.boyfriend:focus,
+.boyfriend:active,
+.comeFromAway:hover,
+.comeFromAway:focus,
+.comeFromAway:active,
+.hamilton:hover,
+.hamilton:focus,
+.hamilton:active,
+.lesMiz:hover,
+.lesMiz:focus,
+.lesMiz:active,
+.summer:hover,
+.summer:focus,
+.summer:active {
+    opacity: 1;
+
 }
 
 main {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 15%;
+    padding: 10%;
     background-color: $color4;
     text-align: center;
 }
@@ -67,8 +92,6 @@ button:focus {
     background-color: $color5;
     box-shadow: none;
 }
-
-
 
 header,
 footer {
@@ -93,13 +116,39 @@ h2 {
     font-family: $primaryFont;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 5% 5%;
+}
+
+i {
+    color: $color1;
+}
+
+i:hover,
+i:focus,
+i:active {
+    color: $color5;
+}
+
+.icons ul {
+    justify-content: space-evenly;
+    padding-top: 15%;
+    margin-bottom: -35px;
+}
+
 p,
 button {
     font-family: $secondaryFont;
 }
 
 .yesButton,
-.noButton,
-.answers {
+.noButton, 
+.result {
     display: none;
+}
+
+.description {
+    margin-top: 4%;
 }
