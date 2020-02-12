@@ -16,7 +16,7 @@ $(document).ready(function() {
   $('.startButton').on('click', function () {
     startPlay();
   });
-  
+
 
 // ***Question object, used to update the question and tell you where to go next, depending on which yes/no button is pushed***
 const question = {
@@ -63,9 +63,10 @@ const nextScreen = function(screenID) {
       if (resultScreenObject.resultID === screenID) {
         $('.opener').hide();
         $('.result').show();
-        $('h2').replaceWith(`<h2>${resultScreenObject.h2}</h2>`);
-        $('.showPhoto').replaceWith(`<img src="${resultScreenObject.photo}">`);
-        $('.showContent').replaceWith(`<div class=description>${resultScreenObject.showDescription}</div>`);
+        $('h2').replaceWith(`<h2 class="resultH2">${resultScreenObject.h2}</h2>`);
+        $('.showPhoto').replaceWith(`<img class="resultPhoto" src="${resultScreenObject.photo}">`);
+        $('.showContent').replaceWith(`<div> <p class="resultContent">${resultScreenObject.showDescription}</p></div>`);
+        $('.icons').show();
       } 
     }
     }else {
@@ -90,36 +91,37 @@ const nextScreen = function(screenID) {
   });
 
 
+
   // ***resultScreen values to be displayed according to which screen is chosen by the player through the game***
 
   const resultScreen = {
     screen5: {
       resultID: 5,
-      h2: `Try "Summer"!`,
+      h2: `Check out <span class="italic">Summer</span>!`,
       photo: `./assets/Summer.jpg" alt="a showposter in blues of Summer with Donna Summer on it`,
       showDescription: "Summer: The Donna Summer Musical takes us through Donna Summer’s tumultuous life, tempestuous loves and mega-watt musical hits. Spend the night in her electrifying universe.", 
     },
     screen6: {
       resultID: 6,
-      h2: `Try "Les Miserables"!`,
+      h2: `Check out <span class="italic">Les Miserables</span>!`,
       photo: `./assets/lesMiz.png" alt="a Les Miserables showposter in black, white, red, and blue with classic Young Cosette on it`,
       showDescription: 'Set against the backdrop of 19th-century France, Les Misérables tells an unforgettable story of heartbreak, passion, and the resilience of the human spirit."',
     },
     screen7: {
       resultID: 7,
-      h2: `Try "Come From Away"!`,
+      h2: `Check out <span class="italic">Come From Away</span>!`,
       photo: `./assets/CFA.jpg" alt="a showposter in bright blues and yellows of Come From Away with the words the hit musical based on the remarkable true story below the title`,
       showDescription: "It’s been called the “edge of the world.” The weather is wild, but the locals never lack for warmth. And it’s here, in Newfoundland, where a remote town became the epicenter of a remarkable true story filled with unusual characters, unexpected camaraderie and uncommon generosity.",
     },
     screen8: {
       resultID: 8,
-      h2: `Try "The Boyfriend"!`,
+      h2: `Check out <span class="italic">The Boyfriend</span>!`,
       photo: `./assets/Boyfriend.jpg" alt="a showposter in light blues of The Boyfriend with a couple on a speedboat`,
       showDescription: "The Boy Friend will star beloved stage and screen actor Kelsey Grammer. One of the most well-loved British musicals of all time, The Boyfriend is Sandy Wilson's all-singing all-dancing love letter to 1920s musical comedies.",
     },
     screen9: {
       resultID: 9,
-      h2: `Try "Hamilton"!`,
+      h2: `Check out <span class="italic">Hamilton</span>!`,
       photo: `./assets/hamilton.jpg" alt="a showposter in gold and black of Hamilton with Alexander Hamilton on a star`,
       showDescription: "Hamilton is the story of America's Founding Father Alexander Hamilton, an immigrant from the West Indies who became George Washington's right-hand man during the Revolutionary War and was the new nation’s first Treasury Secretary.  Featuring a score that blends hip-hop, jazz, blues, rap, R&B, and Broadway, Hamilton is the story of America then, as told by America now.",
     }

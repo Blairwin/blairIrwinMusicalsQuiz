@@ -1,0 +1,56 @@
+// ***Media Queries***
+
+@media (max-width: 900px) {
+    h1,
+    .resultH2 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    h1,
+    .resultH2 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .resultContent {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .icons ul {
+        margin-bottom: -30px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1,
+    .resultH2 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+     .resultContent {
+        font-size: 0.8rem;
+    }
+
+    footer p {
+        font-size: 0.6rem;
+    }
+}

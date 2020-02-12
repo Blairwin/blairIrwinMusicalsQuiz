@@ -186,6 +186,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   left: -1000px;
   top: 5px;
   z-index: 999;
+  background: white;
+  color: black;
 }
 
 body {
@@ -214,6 +216,12 @@ ul {
 a {
   text-decoration: none;
   color: #ffd100;
+  display: inline-block;
+}
+
+a:focus img,
+a:focus {
+  border: 2px solid white;
 }
 
 .boyfriend,
@@ -224,31 +232,26 @@ a {
   width: 100%;
   max-width: calc(1249px / 5);
   height: auto;
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
 .boyfriend:hover,
-.boyfriend:focus,
-.boyfriend:active,
+a:focus .boyfriend,
 .comeFromAway:hover,
-.comeFromAway:focus,
-.comeFromAway:active,
+a:focus .comeFromAway,
 .hamilton:hover,
-.hamilton:focus,
-.hamilton:active,
+a:focus .hamilton,
 .lesMiz:hover,
-.lesMiz:focus,
-.lesMiz:active,
+a:focus .lesMiz,
 .summer:hover,
-.summer:focus,
-.summer:active {
+a:focus .summer {
   opacity: 1;
 }
 
 main {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 15%;
+  padding: 10%;
   background-color: #ffd100;
   text-align: center;
 }
@@ -286,6 +289,11 @@ footer {
   text-align: center;
 }
 
+footer a:hover,
+footer a:focus {
+  color: white;
+}
+
 h1,
 h2,
 p {
@@ -308,8 +316,7 @@ i {
 }
 
 i:hover,
-i:focus,
-i:active {
+a:focus i {
   color: #1e1e1e;
 }
 
@@ -317,8 +324,8 @@ i:active {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 15%;
-  margin-bottom: -35px;
+  padding-top: 5%;
+  margin-bottom: -50px;
 }
 
 p,
@@ -332,6 +339,67 @@ button {
   display: none;
 }
 
-.description {
+.resultH2 {
+  font-size: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.resultPhoto {
+  border: 5px solid #1e1e1e;
+  border-radius: 5px;
+}
+
+.resultContent {
   margin-top: 4%;
+}
+
+@media (max-width: 900px) {
+  h1,
+  .resultH2 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  h1,
+  .resultH2 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  .resultContent {
+    font-size: 0.9rem;
+  }
+  footer p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .icons ul {
+    margin-bottom: -30px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1,
+  .resultH2 {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .resultContent {
+    font-size: 0.8rem;
+  }
+  footer p {
+    font-size: 0.6rem;
+  }
 }

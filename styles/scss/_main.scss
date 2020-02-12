@@ -4,8 +4,8 @@
     left: -1000px;
     top: 5px;
     z-index: 999;
-    background: $white;
-    color: $black;
+    background: white;
+    color: black;
 }
 
 // ***General Styling***
@@ -13,6 +13,9 @@
 body {
     padding: 2% 3%;
     background-color: $color5;
+    // height: 100vh;
+    // display: flex;
+    // flex-direction: column;
 }
 
 img {
@@ -34,6 +37,12 @@ ul {
 a {
     text-decoration: none;
     color: $color4;
+    display: inline-block;
+}
+
+a:focus img,
+a:focus {
+    border: 2px solid $color1;
 }
 
 .boyfriend,
@@ -44,27 +53,22 @@ a {
     width: 100%;
     max-width: calc(1249px / 5);
     height: auto;
-    opacity: 0.75;
+    opacity: 0.65;
 }
 
 .boyfriend:hover,
-.boyfriend:focus,
-.boyfriend:active,
+a:focus .boyfriend,
 .comeFromAway:hover,
-.comeFromAway:focus,
-.comeFromAway:active,
+a:focus .comeFromAway,
 .hamilton:hover,
-.hamilton:focus,
-.hamilton:active,
+a:focus .hamilton,
 .lesMiz:hover,
-.lesMiz:focus,
-.lesMiz:active,
+a:focus .lesMiz,
 .summer:hover,
-.summer:focus,
-.summer:active {
+a:focus .summer {
     opacity: 1;
-
 }
+
 
 main {
     margin-top: 0;
@@ -72,6 +76,7 @@ main {
     padding: 10%;
     background-color: $color4;
     text-align: center;
+    // max-height: 80vh;
 }
 
 button {
@@ -105,6 +110,11 @@ footer {
     text-align: center;
 }
 
+footer a:hover,
+footer a:focus {
+    color: $color1;
+}
+
 h1,
 h2, 
 p {
@@ -127,15 +137,14 @@ i {
 }
 
 i:hover,
-i:focus,
-i:active {
+a:focus i {
     color: $color5;
 }
 
 .icons ul {
     justify-content: space-evenly;
-    padding-top: 15%;
-    margin-bottom: -35px;
+    padding-top: 5%;
+    margin-bottom: -50px;
 }
 
 p,
@@ -149,6 +158,21 @@ button {
     display: none;
 }
 
-.description {
+// ***Result screen styles***
+
+.resultH2 {
+    font-size: 2rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.resultPhoto {
+    border: 5px solid $color5;
+    border-radius: 5px;
+}
+
+.resultContent {
     margin-top: 4%;
 }
