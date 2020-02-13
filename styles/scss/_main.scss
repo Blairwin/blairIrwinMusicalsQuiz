@@ -1,5 +1,5 @@
-// ***.skip-link is to hide the "skip to main content" link**
-.skip-link {
+// ***.skipLink is to hide the "skip to main content" link**
+.skipLink {
     position: absolute;
     left: -1000px;
     top: 5px;
@@ -13,9 +13,6 @@
 body {
     padding: 2% 3%;
     background-color: $color5;
-    // height: 100vh;
-    // display: flex;
-    // flex-direction: column;
 }
 
 img {
@@ -67,6 +64,7 @@ a:focus .lesMiz,
 .summer:hover,
 a:focus .summer {
     opacity: 1;
+    transition: 1s;
 }
 
 .boyfriendResult,
@@ -87,9 +85,8 @@ a:focus .summer {
 .lesMizResult:hover,
 .summerResult:hover {
     opacity: 0.7;
+    transition: 0.5s;
 }
-
-
 
 main {
     margin-top: 0;
@@ -97,7 +94,6 @@ main {
     padding: 10%;
     background-color: $color4;
     text-align: center;
-    // max-height: 80vh;
 }
 
 button {
@@ -110,6 +106,7 @@ button {
     box-shadow: 5px 10px 5px 0px $color5;
     text-transform: uppercase;
     font-weight: bold;
+    transition: 0.5s;
 }
 
 button:hover,
