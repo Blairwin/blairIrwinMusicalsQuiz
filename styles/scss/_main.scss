@@ -94,6 +94,7 @@ main {
     padding: 10%;
     background-color: $color4;
     text-align: center;
+    height: 80vh;
 }
 
 button {
@@ -114,6 +115,11 @@ button:focus {
     color: $color1;
     background-color: $color5;
     box-shadow: none;
+    transition: 0.5s;
+}
+
+header {
+    height: 15vh;
 }
 
 header,
@@ -126,6 +132,7 @@ footer {
     margin: 0;
     padding: 25px 0 0;
     text-align: center;
+    height: 5vh;
 }
 
 footer a:hover,

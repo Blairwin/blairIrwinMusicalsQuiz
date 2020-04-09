@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <title>Blair Irwin's Super Awesome Shutter Project</title>
+    <script src="https://kit.fontawesome.com/f1a02099c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="#maincontent" class="skip-link">Skip to main content.</a>
+        <header class="clearfix">
+            <div class="nav-wrapper clearfix">
+                <h2>Shutter</h2>
+                <div class="hamburger-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="list-wrapper">
+                    <ul class="header-nav clearfix">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#blog">blog</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="icon-wrapper clearfix">
+                <ul>
+                    <!-- I feel like the li/a/i combos below should maybe be inline, but honestly, it looked so messy and confusing to me that I broke them out... feel free to correct me. :) -->
+                    <li>
+                        <a href="http://www.facebook.com">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com">
+                            <i class="fab fa-linkedin-in">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="primary-welcome">
+                <h1><span class="capitalize">Welcome to</span> <span class="shutter">Shutter</span></h1>
+            </div>  
+        </header>
+        <li id="maincontent">
+            <section id="about">
+                <div class="content-container">
+                    <h2>About Shutter</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate saepe expedita doloribus laborum hic facilis delectus velit pariatur, itaque nostrum necessitatibus in doloremque distinctio eligendi cumque, maxime, sapiente qui.</p>
+                    <button>Find out more</button>
+                </div>    
+            </section>
+            <section id="gallery" class="gallery clearfix">
+                <div class="wrapper clearfix"> 
+                    <ul class="gallery-photos">
+                        <li><img src="./shutter-assets/asset-2.jpg" alt="gorgeous palm trees against a pink cloudy sunset"></li>
+                        <li><img src="./shutter-assets/asset-3.jpg" alt="a hand holding twinkle fairy lights in an open jar against a lit up background"></li>
+                        <li><img src="./shutter-assets/asset-4.jpg" alt="a busy Chicago street filled with traffic and buildings and excellent lighting"></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="blog" class="blog clearfix">
+                <li class="blog-nav">
+                    <nav>
+                        <ul>
+                            <!-- Same deal with these li/a/i/h3 combos as above... perhaps I'm way off here?! -->
+                            <li>
+                                <a href="#gallery">
+                                    <i class="fas fa-images"></i>
+                                    <h3>Gallery</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#photo-tips">
+                                    <i class="fas fa-camera"></i>
+                                    <h3>Photo Tips</h3>
+                                </a>    
+                            </li>
+                            <li>
+                                <a href="#about">
+                                    <i class="fas fa-image"></i>
+                                    <h3>About</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    <i class="fas fa-envelope"></i>
+                                    <h3>Contact</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>    
+                </div>
+            </section>
+            <section class="blog-post-1 clearfix">
+                <div class="wrapper clearfix">
+                    <div class="blog-post-photo-1">
+                        <img src="./shutter-assets/asset-6.jpg" alt="a side view of a casually dressed person with long hair taking photos with a professional camera with a bubblegum pink wall in the background">
+                    </div>
+                    <div class="blog-content">
+                        <h2>Behind the Lens</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam labore vel. Recusandae consectetur id ab nesciunt rerum. Fugiat a eligendi sunt dolorum explicabo laboriosam facere illum reiciendis. Deleniti accusantium animi consequatur a rem atque, enim nobis sapiente praesentium, ut numquam aliquid quos et maxime quia vel recusandae necessitatibus! Ex, sed quos fugit sint libero velit similique magnam excepturi, suscipit quaerat consectetur possimus commodi quae ipsa optio aliquam deserunt voluptatibus.</p>
+                        <button>Find out more</button>
+                    </div>      
+                </div>      
+            </section>
+            <section class="blog-post-2 clearfix main-wrapper" id="photo-tips">
+                <div class="blog-post-photo-2">
+                    <img class="white-space" src="./shutter-assets/asset-7.jpg"
+                        alt="big rocks in an ocean like Ariel from The Little Mermaid sings on against a light pink sky">
+                </div>
+                <div class="blog-post-content-2">
+                    <h3>Nature & Scenery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sit eum nesciunt temporibus asperiores, totam blanditiis a placeat at nihil.</p>
+                    <button>Read more</button>
+                    <!-- Note: treating all these buttons-like items as actual buttons and not <a> tags, as they are styled as buttons... so don't want to go against accessibilty guidelines... as per Colin's guidance. -->
+                </div>
+                <div class="blog-post-photo-3">
+                    <img class="white-space" src="./shutter-assets/asset-8.jpg" alt="a person's back as they look out on to a wavy ocean while holding a lavendar jacket">
+                </div>
+                <div class="blog-post-content-2b">
+                    <h3>Candid Photography</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptate esse ex illum provident, voluptatem beatae.</p>
+                    <button>Read more</button>
+                </div>
+            </section>
+            <section class="contact main-wrapper" id="contact">
+                <div class="contact-wrapper clearfix">
+                    <div class="subscribe">
+                        <h4>Stay updated</h4>
+                        <p>Subscribe to our newsletter to stay updated.</p>
+                        <form action="#" method="#" class="myForm" name="myForm">
+                            <label for="emailAddress" class="visually-hidden">Email address</label>
+                            <input type="email" id="userEmail" name="emailAddress" placeholder="email address">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Contact</h4>
+                        <a href="mailto:info@email.com">info@email.com</a>
+                        <p>123 - 456 - 7890</p>
+                        <p>123 some road,</p>
+                        <p>Toronto, ON</p>
+                    </div>    
+                    <div class="nav-contact">
+                        <h4>Pages</h4>
+                        <nav>
+                            <ul>
+                                <li><a href="#home">home</a></li>
+                                <li><a href="#about">about</a></li>
+                                <li><a href="#blog">blog</a></li>
+                                <li><a href="#contact">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>    
+            </section>
+        </main id="maincontent">
+        <footer class="main-wrapper">
+            <p>Copyright &copy; 2018 HackerYou</p>
+        </footer>
+    </div>    
+</body>
+</html>

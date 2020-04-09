@@ -278,6 +278,7 @@ main {
   padding: 10%;
   background-color: #ffd100;
   text-align: center;
+  height: 80vh;
 }
 
 button {
@@ -301,6 +302,12 @@ button:focus {
   background-color: #1e1e1e;
   -webkit-box-shadow: none;
           box-shadow: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header {
+  height: 15vh;
 }
 
 header,
@@ -313,6 +320,7 @@ footer {
   margin: 0;
   padding: 25px 0 0;
   text-align: center;
+  height: 5vh;
 }
 
 footer a:hover,
