@@ -94,7 +94,7 @@ main {
     padding: 10%;
     background-color: $color4;
     text-align: center;
-    height: 80vh;
+    // height: 80vh;
 }
 
 button {
@@ -118,9 +118,9 @@ button:focus {
     transition: 0.5s;
 }
 
-header {
-    height: 15vh;
-}
+// header {
+//     height: 15vh;
+// }
 
 header,
 footer {

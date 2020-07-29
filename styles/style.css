@@ -278,7 +278,6 @@ main {
   padding: 10%;
   background-color: #ffd100;
   text-align: center;
-  height: 80vh;
 }
 
 button {
@@ -304,10 +303,6 @@ button:focus {
           box-shadow: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-header {
-  height: 15vh;
 }
 
 header,
